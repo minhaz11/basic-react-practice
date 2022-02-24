@@ -8,6 +8,7 @@ const useFetch = (url) => {
            () => {
             fetch(url,{signal:abortCont.signal}).
             then(res => {
+              console.log(res);
                 if(!res.ok) throw Error('Could not fetch data'); 
                 return res.json()
               })

@@ -5,7 +5,7 @@ const Home = () => {
    const {data} = useFetch('http://localhost:8000/blogs')
     return ( 
         <div>
-          {data && <BlogList blogs={data}/> }
+          {data && <BlogList blogs={data}/>}
         </div>
     );
 }
